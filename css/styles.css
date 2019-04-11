@@ -1,0 +1,105 @@
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+  background-color: #e5eaf0;
+}
+
+
+
+/* Main */
+
+header {
+  background-color: #2d3945;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* make header full width */
+
+header h1 {
+  font-size: 21px;
+}
+
+#wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+/* 95% width for main content */
+
+.top-content {
+  text-align: center;
+}
+
+.top-content h1 {
+  font-size: 18px;
+}
+
+.top-content p {
+  font-size: 12px;
+  color: grey;
+}
+
+.hr1, .hr2 {
+  background-color: #2d3945;
+  color: #2d3945;
+  border-color: #2d3945;
+  width: 92.5%;
+}
+/* divider - line break */
+
+.hr1 {
+  height: 2.5px;
+}
+
+.hr2 {
+  height: 1px;
+}
+
+form {
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  border: none;
+  font-size: 12px;
+  height: auto;
+  margin: 0;
+	margin-bottom: 30px;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e0e3e8;
+  color: grey;
+  box-shadow: 0 2.5px 0 rgba(0,0,0,0.03) inset;
+}
+/*  */
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+
+
+
+
+/* Media Query */
+
+@media (min-width: 768px) {
+
+
+}
