@@ -41,6 +41,8 @@ header h1 {
 
 .top-content h1 {
   font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .top-content p {
@@ -71,12 +73,13 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-textarea {
+input[type="tel"],
+textarea,
+select {
   border: none;
   font-size: 12px;
   height: auto;
-  margin: 0;
+  margin-top: 10px;
 	margin-bottom: 30px;
   outline: 0;
   padding: 15px;
@@ -92,8 +95,108 @@ textarea {
   height: 100px;
 }
 
+fieldset {
+  border: none;
+}
+
+legend {
+  margin-bottom: 25px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+.spacing-top {
+  padding-bottom: 10px;
+}
+
+.spacing-middle {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
 
 
+.spacing-bottom {
+  padding-top: 25px;
+}
+
+input,
+select,
+button,
+textarea {
+	border-radius: 5px;
+}
+
+button {
+  padding: 25px 40px 20px 40px;
+  color: white;
+  background-color: #4ebbb5;
+  font-size: 15px;
+	margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #4ebbb5;
+  border-width: 1px 1px 2.5px;
+  box-shadow: 0 2.5px 0 rgba(255,255,255,0.05) inset;
+	outline: 0;
+}
+
+label {
+  color: grey;
+}
+
+input:focus {
+	border: 1.5px solid #2d3945;
+}
+
+textarea:focus {
+	border: 1.5px solid #4ebbb5;
+}
+
+::placeholder {
+	text-align: right;
+	font-size: 10px;
+	color: red;
+}
+
+#number::placeholder {
+	text-align: left;
+	font-size: 10px;
+	color: grey;
+}
+
+#address::placeholder {
+	text-align: left;
+	font-size: 10px;
+	color: grey;
+}
+
+#city::placeholder {
+	text-align: left;
+	font-size: 10px;
+	color: grey;
+}
+
+#postal::placeholder {
+	text-align: left;
+	font-size: 10px;
+	color: grey;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  transition: 0.25s ease;
+  background-color: white;
+}
+/* transition */
+
+select {
+  padding: 10px;
+  height: 45px;
+}
 
 
 
@@ -101,5 +204,29 @@ textarea {
 
 @media (min-width: 768px) {
 
+  #wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+
+  .top-content h1 {
+    font-size: 21px;
+  }
+
+  .top-content p {
+    font-size: 15px;
+  }
+
+  .rows {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-1 label {
+    flex-basis: 50%;
+    max-width: 150px;
+    padding-top: 20px;
+  }
 
 }
