@@ -19,98 +19,92 @@
         <hr class="hr1">
         <hr class="hr2">
       </section>
-      <section>
 
         <form action="index.html" method="post">
 
           <fieldset class="form-1">
 
-            <legend>Contact Information</legend>
+          <legend>Contact Information</legend>
 
-            <div class="rows">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="user_name" placeholder="Required" required>
-            </div>
+          <div class="rows">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+          </div>
 
-            <div class="rows">
-              <label for="mail">Email Address</label>
-              <input type="email" id="mail" name="user_email" placeholder="Required" required>
-            </div>
+          <div class="rows">
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user_email" placeholder="Required" required>
+          </div>
 
-            <div class="rows">
-              <label for="number">Phone Number</label>
-              <input type="tel" id="number" name="user_number" placeholder="(Optional)">
-            </div>
+          <div class="rows">
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="user_number" placeholder="(Optional)">
+          </div>
 
-            <div class="rows">
-              <label for="address">Street Address</label>
-              <input type="text" id="address" name="user_address" placeholder="(Optional)">
-            </div>
+          <div class="rows">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address" placeholder="(Optional)">
+          </div>
 
-            <div class="rows">
-              <label for="city">City</label>
-              <input type="text" id="city" name="user_city" placeholder="(Optional)">
-            </div>
+          <div class="rows">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city" placeholder="(Optional)">
+          </div>
 
-            <div class="rows">
-              <label for="province">Province</label>
-              <select id="province" name="user_province">
-                <option disabled selected>Choose Province</option>
-                <option value="alberta">Alberta</option>
-                <option value="british_columbia">British Columbia</option>
-                <option value="manitoba">Manitoba</option>
-                <option value="new_brunswick">New Brunswick</option>
-                <option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
-                <option value="northwest_territories">Northwest Territories</option>
-                <option value="nova_scotia">Nova Scotia</option>
-                <option value="nunavut">Nunavut</option>
-                <option value="ontario">Ontario</option>
-                <option value="prince_edward_island">Prince Edward Island</option>
-                <option value="quebec">Quebec</option>
-                <option value="saskatchewan">Saskatchewan</option>
-                <option value="yukon">Yukon</option>
-              </select>
-            </div>
+          <div class="rows">
+            <label for="province">Province</label>
+            <select id="province" name="user_province">
+              <option disabled selected>Choose Province</option>
+              <option value="alberta">Alberta</option>
+              <option value="british_columbia">British Columbia</option>
+              <option value="manitoba">Manitoba</option>
+              <option value="new_brunswick">New Brunswick</option>
+              <option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
+              <option value="northwest_territories">Northwest Territories</option>
+              <option value="nova_scotia">Nova Scotia</option>
+              <option value="nunavut">Nunavut</option>
+              <option value="ontario">Ontario</option>
+              <option value="prince_edward_island">Prince Edward Island</option>
+              <option value="quebec">Quebec</option>
+              <option value="saskatchewan">Saskatchewan</option>
+              <option value="yukon">Yukon</option>
+            </select>
+          </div>
 
-            <div class="rows">
-              <label for="postal">Postal Code</label>
-              <input type="text" id="postal" name="user_postal" placeholder="(Optional)">
-            </div>
+          <div class="rows">
+            <label for="postal">Postal Code</label>
+            <input type="text" id="postal" name="user_postal" placeholder="(Optional)">
+          </div>
 
-          </fieldset>
+        </fieldset>
 
-          <hr class="hr2">
+        <hr class="hr2">
 
-        </section>
-        <section>
+        <fieldset>
 
-          <fieldset>
+          <legend>Newsletter</legend>
 
-            <legend>Newsletter</legend>
+          <div class="spacing-top">
+            <label>Select the newsletters you would like to recieve</label><br>
+          </div>
+          <input type="checkbox" id="html_news" name="user_news" value="news_html_news"><label for="html_news">HTML News</label><br>
+          <input type="checkbox" id="css_news" name="user_news" value="news_css_news"><label for="css_news">CSS News</label><br>
+          <input type="checkbox" id="javascript_news" name="user_news" value="news_javascript_news"><label for="javascript_news">JavaScript News</label><br>
 
-            <div class="spacing-top">
-              <label for="">Select the newsletters you would like to recieve</label><br>
-            </div>
-            <input type="checkbox" id="html" name="user_news" value="html_news"><label for="news">HTML News</label><br>
-            <input type="checkbox" id="css" name="user_news" value="css_news"><label for="news">CSS News</label><br>
-            <input type="checkbox" id="javascript" name="user_news" value="javascript_news"><label for="news">JavaScript News</label><br>
+          <div class="spacing-middle">
+            <label>Newsletter format</label><br>
+          </div>
+          <input type="radio" id="html" name="format" value="html"><label>HTML</label><br>
+          <input type="radio" id="plain_text" name="format" value="plain_text"><label>Plain Text</label><br>
 
-            <div class="spacing-middle">
-              <label>Newsletter format</label><br>
-            </div>
-            <input type="radio" id="html" name="format" value="html"><label>HTML</label><br>
-            <input type="radio" id="plain_text" name="format" value="plain_text"><label>Plain Text</label><br>
+          <div class="spacing-bottom">
+            <label for="comment">Other topics you'd like to hear about</label>
+          </div>
+          <textarea id="comment" name="user_comment" maxlength="500"></textarea>
+          <button type="submit">Sign Up</button>
 
-            <div class="spacing-bottom">
-              <label for="comment">Other topics you'd like to hear about</label>
-            </div>
-            <textarea id="comment" name="user_comment" maxlength="500"></textarea>
-            <button type="submit">Sign Up</button>
-
-          </fieldset>
-
-        </form>
-      </section>
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>
